@@ -1,0 +1,12 @@
+<div style="text-align:center">
+    <h2>Product : {{productName}}</h2>
+    <div class="example-button-container" style="display:inline">
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-lable> Quantity:</mat-lable>
+              <input matInput type="number" #quantityRef>
+            </mat-form-field>
+        </form>
+    </div>
+    <button mat-button (click)="buyProduct(quantityRef.value)" color="primary">Buy</button>
+</div>
